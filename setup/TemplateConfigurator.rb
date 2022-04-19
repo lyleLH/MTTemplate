@@ -99,7 +99,7 @@ module Pod
 
     def add_mt_pods
       self.add_pod_to_podfile "MTCategoryComponent"
-      self.add_pod_to_podfile "MTBaseKit"
+      # self.add_pod_to_podfile "MTBaseKit"
       self.add_pod_to_podfile "MTLayoutUtilityComponent"
       self.add_pod_to_podfile "SDWebImage"
 
