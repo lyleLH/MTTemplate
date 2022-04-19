@@ -1,0 +1,23 @@
+source 'git@github.com:lyleLH/MTSpecs.git'
+source 'https://cdn.cocoapods.org/'                  #官方仓库地址 cdn
+
+
+platform :ios, '10.0'
+
+inhibit_all_warnings!
+use_modular_headers!
+use_frameworks! :linkage => :static
+
+
+
+
+target '${POD_NAME}_Example' do
+  pod 'MTBaseKit' ,:git => 'git@github.com:lyleLH/MTBaseKit.git',:branch => 'master'
+  pod '${POD_NAME}', :path => '../'
+
+  target '${POD_NAME}_Tests' do
+    inherit! :search_paths
+
+    ${INCLUDED_PODS}
+  end
+end
