@@ -8,8 +8,7 @@
 
 #import "CPDViewController.h"
 
-#import <MTRouterComponent/MTRouterComponentHeader.h>
-#import <MTModuleServiceComponent/MTModuleServiceComponentHeader.h>
+#import <MTBaseKit/MTBaseKitHeader.h>
 
 #import <PROJECT/CPDPROJECTServiceProtocol.h>
 
